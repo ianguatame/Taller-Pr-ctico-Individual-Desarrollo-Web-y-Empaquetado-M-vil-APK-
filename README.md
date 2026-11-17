@@ -1,16 +1,49 @@
-# React + Vite
+# Taberna del Maestro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Tu pantalla de guerra para D&D 5e. Una herramienta interactiva diseñada para asistir a Dungeon Masters durante sus partidas.
 
-Currently, two official plugins are available:
+##  Enlaces del Proyecto
+* **Aplicación Web (Vercel):** [https://taller-pr-ctico-individual-desarrol.vercel.app]
+* **Descarga APK (Android):** [https://github.com/ianguatame/Taller-Pr-ctico-Individual-Desarrollo-Web-y-Empaquetado-M-vil-APK-/releases/tag/v1.0.0]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+##  Características Principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Criaturas (Bestiario):**
+   * Consulta en tiempo real la API oficial de D&D 5e (`/api/monsters`).
+   * Buscador interactivo por nombre.
+   * Tarjetas dinámicas con estadísticas clave: Clase de Armadura (AC), Puntos de Golpe (HP) y Nivel de Desafío (CR).
+   * Gestión del encuentro actual para añadir o retirar monstruos fácilmente.
 
-## Expanding the ESLint configuration
+2. **Tesoro (Generador de Botín):**
+   * Selector dinámico basado en el Nivel de Desafío (CR) de la criatura derrotada.
+   * Generación automática y proporcionada de monedas (Cobre, Plata, Oro y Platino) con cálculo de valor total en monedas de oro (po).
+   * Generación de objetos mágicos y equipo real consultados desde la API (`/api/equipment` y `/api/magic-items`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Bandeja de Dados:**
+   * Soporte completo para dados estándar de rol: **d4, d6, d8, d10, d12, d20 y d100**.
+   * Modificador interactivo de cantidad de dados a lanzar.
+   * Animación de resultados y desglose detallado de sumas.
+   * Historial de lanzamientos recientes en la parte inferior.
+
+
+## Tecnologías Utilizadas
+
+* **Frontend:** React, Vite, JavaScript, CSS (Enfoque Mobile-First).
+* **Fuente de Datos:** [D&D 5e API](https://www.dnd5eapi.co/).
+* **Despliegue Web:** Vercel.
+* **Contenedor Móvil:** CapacitorJS (Android).
+* **Control de Versiones:** Git & GitHub.
+
+
+
+## Ejecución Local del Proyecto
+
+Si deseas clonar y ejecutar el proyecto en tu entorno local:
+
+1. Clona el repositorio:
+   ``bash
+   git clone [https://github.com/ianguatame/Taller-Pr-ctico-Individual-Desarrollo-Web-y-Empaquetado-M-vil-APK-.git]
+2. Instala dependencias: npm install
+3. Inicia el servidor de desarrollo web: npm run dev
+ ``
