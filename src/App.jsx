@@ -2,6 +2,8 @@ import { useState } from 'react'
 import TabBar from './components/TabBar'
 import Monsters from './views/Monsters'
 import './App.css'
+import Loot from './views/Loot'
+import Dice from './views/Dice'
 
 export default function App() {
   const [tab, setTab] = useState('monsters')
@@ -17,8 +19,9 @@ export default function App() {
 
       <main>
         {tab === 'monsters' && <Monsters />}
-        {tab === 'loot' && <p className="msg">Próximamente</p>}
-        {tab === 'dice' && <p className="msg">Próximamente</p>}
+        {tab === 'loot' && <Loot />}
+        {tab === 'dice' && <Dice />}
+        
       </main>
 
       <footer className="foot">
